@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.item-list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  width: 100%;
+}
+.item-list ul li {
+  display: inline-block;
+  font-size: 45px;
+  margin-left: 120px;
+}
+.item-list ul li:first-child {
+  margin-left: 0;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 620px) {
+  .item-list ul li {
+    display: inline-block;
+    font-size: 45px;
+    margin-left: 80px;
+  }
+  .item-list ul li:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 515px) {
+  .item-list ul li {
+    display: inline-block;
+    font-size: 45px;
+    margin-left: 50px;
+  }
+  .item-list ul li:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 368px) {
+  .item-list ul li {
+    display: inline-block;
+    font-size: 37px;
+    margin-left: 50px;
+  }
+  .item-list ul li:first-child {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=ItemList.css.map */

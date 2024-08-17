@@ -1,0 +1,148 @@
+@import "../../MainStyleItem/listOfVariables.scss";
+
+.header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            display: inline-block;
+            font-size: $headerFontSize;
+            margin-left: 90px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1001;
+
+        span {
+            width: 100%;
+            height: 3px;
+            background-color: $mainColor;
+            border-radius: 2px;
+            transition: all 0.3s linear;
+        }
+    }
+
+    &.open ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        max-height: 500px;
+        overflow: hidden;
+        transition: max-height 0.9s ease-in-out;
+
+        li {
+            margin: 20px 0;
+        }
+    }
+}
+
+.header-section.scrolled {
+    background-color: rgba(255, 255, 255, 0.772);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .header-section {
+        ul {
+            li {
+                margin-left: 40px;
+            }
+
+            li:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+// ハンバーガーメニュー
+@media (max-width: 515px) {
+    .header-section {
+        justify-content: space-between;
+
+        ul {
+            display: none;
+        }
+
+        .hamburger-menu {
+            display: flex;
+            margin-left: 40px;
+        }
+
+        &.open ul {
+            display: flex;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        &.closing ul {
+            animation: slideUp 0.5s ease-in-out;
+        }
+    }
+
+    .no-underline::after {
+        content: none;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .header-section {
+        .hamburger-menu {
+            margin-left: 20px;
+        }
+    }
+}

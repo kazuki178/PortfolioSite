@@ -1,0 +1,36 @@
+@import "../../MainStyleItem/listOfVariables.scss";
+
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 30px;
+        border-bottom: solid 2px $mainColor;
+        margin-top: 80px;
+    }
+
+    // バックエンド実装終わったらtest消す
+    .test {
+        p {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:620px) {
+    .news-section {
+        h2 {
+            font-size: 30px;
+            border-bottom: solid 2px $mainColor;
+            margin-top: 50px;
+        }
+    }
+}

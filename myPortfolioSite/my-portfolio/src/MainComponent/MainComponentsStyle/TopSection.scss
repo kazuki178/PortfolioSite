@@ -1,0 +1,232 @@
+@import "../../MainStyleItem/listOfVariables.scss";
+
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 69px;
+    margin-top: 165px;
+
+    // background-color: red;
+
+    .top-section-img {
+        width: 250px;
+        border-radius: 58% 42% 61% 39% / 43% 54% 46% 57%;
+        margin-right: 20px;
+
+    }
+
+    .user-info {
+        width: 300px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .my-name-r {
+            font-size: $myNameFontSize;
+
+            .name-span {
+                color: $mainColor;
+            }
+        }
+
+        .my-name-j {
+            font-size: $myNameFontSize;
+            margin-top: 20px;
+
+            .name-span {
+                color: $mainColor;
+            }
+        }
+
+        .license {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+
+            .licenseSpan {
+                color: rgb(147, 29, 29);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 772px) {
+
+    .top-section {
+        display: flex;
+        flex-direction: row;
+
+        .top-section-img {
+            width: 200px;
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+    .top-section {
+        display: flex;
+        flex-direction: row;
+
+        .top-section-img {
+            width: 160px;
+        }
+
+        .user-info {
+            width: 250px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .my-name-r {
+                font-size: $myNameFontSize * 0.8;
+            }
+
+            .my-name-j {
+                font-size: $myNameFontSize*0.8;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 620px) {
+    .top-section {
+        display: flex;
+        flex-direction: row;
+
+        .top-section-img {
+            width: 160px;
+        }
+
+        .user-info {
+            width: 250px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .my-name-r {
+                font-size: $myNameFontSize * 0.8;
+            }
+
+            .my-name-j {
+                font-size: $myNameFontSize*0.8;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 515px) {
+    .top-section {
+
+        .top-section-img {
+            width: 140px;
+        }
+
+        .user-info {
+            width: 200px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .my-name-r {
+                font-size: $myNameFontSize * 0.7;
+            }
+
+            .my-name-j {
+                font-size: $myNameFontSize*0.7;
+                margin-top: 20px;
+            }
+
+            .license {
+                margin-top: 15px;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    .top-section {
+
+        .top-section-img {
+            width: 140px;
+        }
+
+        .user-info {
+            width: 180px;
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .my-name-r {
+                font-size: $myNameFontSize * 0.7;
+            }
+
+            .my-name-j {
+                font-size: $myNameFontSize*0.7;
+                margin-top: 20px;
+            }
+
+            .license {
+                margin-top: 15px;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 368px) {
+    .top-section {
+
+        .top-section-img {
+            width: 120px;
+        }
+
+        .user-info {
+            width: 180px;
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .my-name-r {
+                font-size: $myNameFontSize * 0.6;
+            }
+
+            .my-name-j {
+                font-size: $myNameFontSize*0.6;
+                margin-top: 20px;
+            }
+
+            .license {
+                margin-top: 15px;
+                font-size: 16px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,88 @@
+@import './reset.css';
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  cursor: pointer;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(60, 166, 166, 0.9333333333);
+  transition: width 0.3s ease-out;
+  transform: translateX(-50%);
+}
+a:hover {
+  color: rgba(60, 166, 166, 0.8);
+}
+a:hover::after {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(60, 166, 166, 0.9333333333);
+  transition: width 0.3s ease-out;
+  transform: translateX(-50%);
+}
+button:hover {
+  color: rgba(60, 166, 166, 0.8);
+}
+button:hover::after {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .top-section, .about-section-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-list li {
+    margin: 20px 0;
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=App.css.map */

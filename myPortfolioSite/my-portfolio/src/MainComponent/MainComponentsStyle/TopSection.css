@@ -1,0 +1,171 @@
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 69px;
+  margin-top: 165px;
+}
+.top-section .top-section-img {
+  width: 250px;
+  border-radius: 58% 42% 61% 39%/43% 54% 46% 57%;
+  margin-right: 20px;
+}
+.top-section .user-info {
+  width: 300px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-section .user-info .my-name-r {
+  font-size: 40px;
+}
+.top-section .user-info .my-name-r .name-span {
+  color: rgba(60, 166, 166, 0.9333333333);
+}
+.top-section .user-info .my-name-j {
+  font-size: 40px;
+  margin-top: 20px;
+}
+.top-section .user-info .my-name-j .name-span {
+  color: rgba(60, 166, 166, 0.9333333333);
+}
+.top-section .user-info .license {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.top-section .user-info .license .licenseSpan {
+  color: rgb(147, 29, 29);
+}
+
+@media (max-width: 772px) {
+  .top-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-section .top-section-img {
+    width: 200px;
+  }
+}
+@media (max-width: 620px) {
+  .top-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-section .top-section-img {
+    width: 160px;
+  }
+  .top-section .user-info {
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-section .user-info .my-name-r {
+    font-size: 32px;
+  }
+  .top-section .user-info .my-name-j {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .top-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-section .top-section-img {
+    width: 160px;
+  }
+  .top-section .user-info {
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-section .user-info .my-name-r {
+    font-size: 32px;
+  }
+  .top-section .user-info .my-name-j {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 515px) {
+  .top-section .top-section-img {
+    width: 140px;
+  }
+  .top-section .user-info {
+    width: 200px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-section .user-info .my-name-r {
+    font-size: 28px;
+  }
+  .top-section .user-info .my-name-j {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .top-section .user-info .license {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .top-section .top-section-img {
+    width: 140px;
+  }
+  .top-section .user-info {
+    width: 180px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-section .user-info .my-name-r {
+    font-size: 28px;
+  }
+  .top-section .user-info .my-name-j {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .top-section .user-info .license {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 368px) {
+  .top-section .top-section-img {
+    width: 120px;
+  }
+  .top-section .user-info {
+    width: 180px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-section .user-info .my-name-r {
+    font-size: 24px;
+  }
+  .top-section .user-info .my-name-j {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .top-section .user-info .license {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=TopSection.css.map */

@@ -1,0 +1,58 @@
+@import "../MainStyleItem/listOfVariables.scss";
+
+.about-section-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-section{
+        // background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center; // 子要素を中央に配置
+        margin-top: 20px;
+        width: 87%;
+        h1 {
+            font-size: $topTextFontSize;
+            border-bottom: solid 2px $mainColor;
+        }
+        p {
+            padding: 0 20px;
+            max-width: 800px;
+            padding-bottom: 60px;
+            margin-top: 40px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .license {
+            padding: 20px;
+            border-radius: 9px;
+            max-width: 300px;
+            background-color: $mainColor;
+
+            li {
+                margin-top: 3px;
+            }
+        }
+        .skills{
+            h2{
+                margin-top: 90px;
+                text-align: center;
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            .skill-item{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .tec-img{
+                    width: 50px;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}

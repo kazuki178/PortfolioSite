@@ -1,0 +1,74 @@
+@import "../../MainStyleItem/listOfVariables.scss";
+
+
+.item-list {
+    // background-color: red;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+
+
+    ul {
+        li {
+            display: inline-block;
+            font-size: 45px;
+            margin-left: 120px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+/* レスポンシブデザイン */
+@media (max-width: 620px) {
+    .item-list {
+        ul {
+            li {
+                display: inline-block;
+                font-size: 45px;
+                margin-left: 80px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 515px) {
+    .item-list {
+        ul {
+            li {
+                display: inline-block;
+                font-size: 45px;
+                margin-left: 50px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 368px) {
+    .item-list {
+        ul {
+            li {
+                display: inline-block;
+                font-size: 37px;
+                margin-left: 50px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
