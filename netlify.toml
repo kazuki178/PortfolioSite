@@ -1,5 +1,5 @@
   [build]
-  base = "kazyu/react"
+  base = "kazyu/myPortfolioSite"
   publish = "kazyu/react/build"
   command = "npm install && npm run build"
 
