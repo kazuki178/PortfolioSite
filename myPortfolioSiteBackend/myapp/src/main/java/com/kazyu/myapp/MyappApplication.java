@@ -11,24 +11,23 @@ import com.kazyu.myapp.repository.ArchitectCrudRepository;
 public class MyappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyappApplication.class, args).getBean(MyappApplication.class).execute();
+		SpringApplication.run(MyappApplication.class, args);
+		//.getBean(MyappApplication.class).execute();
 
 	}
-	@Autowired
-	ArchitectCrudRepository articleCrudRepository;
 
-	private void execute() {
-		// 全権取得
-		executeSelect();
-	}
+	// 実行確認済み
+	// @Autowired
+	// ArchitectCrudRepository articleCrudRepository;
 
-	// 全権取得
-	private void executeSelect() {
-		// 全権取得
-		Iterable<Architect> articles = articleCrudRepository.findAll();
-		for (Architect article : articles) {
-			System.out.println(article);
-		}
-	}
+	// private void execute() {
+	// 	executeSelect();
+	// }
+
+	// private void executeSelect() {
+	// 	Iterable<Architect> articles = articleCrudRepository.findAll();
+	// 	articles.forEach(System.out::println);
+
+	// }
 
 }
