@@ -1,6 +1,6 @@
 [build]
-  base = "myPortfolioSite/my-portfolio"
-  publish = "myPortfolioSite/my-portfolio/build"
+  base = "/opt/build/repo/myPortfolioSite/my-portfolio"
+  publish = "/opt/build/repo/myPortfolioSite/my-portfolio/build"
   command = "npm install && npm run build"
 
 [context.production.environment]
