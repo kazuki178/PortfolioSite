@@ -33,6 +33,16 @@ const NewTopics: React.FC = () => {
                         {/* バックエンド実装終わったら消す */}
                         <div className="test">
                             <p>バックエンド実装中</p>
+                            {architects.length>0 ? (
+                                architects.map((architect) => (
+                                    <div key={architect.id}>
+                                        <p>{architect.day.toString()}</p>
+                                        <h3>{architect.title}</h3>
+                                    </div>
+                                ))
+                            ) : (
+                                <p>記事が取得できませんでした。</p>
+                            )}
                         </div>
                     </div>
                 </div>
