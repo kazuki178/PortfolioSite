@@ -7,8 +7,9 @@ import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 import com.kazyu.myapp.entity.Architect;
 import com.kazyu.myapp.repository.ArchitectCrudRepository;
 
-@EnableJdbcRepositories
+
 @SpringBootApplication
+@EnableJdbcRepositories(basePackages = "com.kazyu.myapp.repository")
 public class MyappApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyappApplication.class, args);

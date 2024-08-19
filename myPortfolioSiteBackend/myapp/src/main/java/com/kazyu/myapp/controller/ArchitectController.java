@@ -11,7 +11,6 @@ import com.kazyu.myapp.repository.ArchitectCrudRepository;
 @RestController
 @RequestMapping("/api/architects")
 public class ArchitectController {
-
     @Autowired
     private ArchitectCrudRepository architectCrudRepository;
 
