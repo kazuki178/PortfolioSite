@@ -1,6 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../MainComponent/MainComponentsStyle/NewTopics.css';
+
+interface Architect {
+    id: number;
+    day: string;
+    title: string;
+
+}
 const NewTopics: React.FC = () => {
+    const [architects, setArchitects] = useState<Architect[]>([]);
+
+    useEffect(() => {
+        fetch('/api/architects')
+            .then(response => response.json())
+            .then(data => {
+                // 日付フィールドをDate型に変換
+                const architectsWithDate = data.map((item: any) => ({
+                    ...item,
+                    day: new Date(item.day)
+                }));
+                setArchitects(architectsWithDate);
+            })
+            .catch(error => console.error('Error fetching architects:', error));
+    }, []);
     return (
         <>
 

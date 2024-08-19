@@ -13,7 +13,7 @@ const AppContent: React.FC = () => {
     <>
       {(location.pathname === '/' || location.pathname === '/about') && <TopSection />}
       <Routes>
-        {/* backend作成の旨をItemlistと共に返したい 他のコンポーネントを作成して、そこからitemlistとnewsコンポーネント(例)を返す的な */}
+        {/* backend作成の旨をItemlistと共に返したい 他のコンポーネントを作成して、そこからitemlistとnewsコンポーネント(例)を返す */}
         <Route path="/" element={<ItemAndNewtopics />} />
         <Route path="/about" element={<AboutMe />} />
       </Routes>
