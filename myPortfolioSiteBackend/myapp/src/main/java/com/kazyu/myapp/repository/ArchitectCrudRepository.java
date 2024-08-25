@@ -10,6 +10,6 @@ import org.springframework.data.domain.Pageable;
 
 @Repository
 public interface ArchitectCrudRepository extends CrudRepository<Architect, Integer> {
-    @Query("SELECT * FROM Architect WHERE day >= CURRENT_DATE - INTERVAL '3 months' ORDER BY day DESC")
+    @Query("SELECT * FROM architect WHERE day >= CURRENT_DATE - INTERVAL '3 months' ORDER BY day DESC")
     List<Architect> findRecentArchitects(Pageable pageable);
 }

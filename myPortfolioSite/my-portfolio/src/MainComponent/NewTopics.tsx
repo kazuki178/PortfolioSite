@@ -7,15 +7,22 @@ interface Architect {
     title: string;
 
 }
+
 const NewTopics: React.FC = () => {
     const [architects, setArchitects] = useState<Architect[]>([]);
 
     useEffect(() => {
-        fetch('/api/architects')
-            .then(response => response.json())
+        fetch('http://localhost:8080/api/architects')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 // 日付フィールドをDate型に変換
                 const architectsWithDate = data.map((item: any) => ({
+                    //スプレッド構文でitemをこぴーして、dayフィールドだけDate型に変換
                     ...item,
                     day: new Date(item.day)
                 }));
@@ -41,7 +48,7 @@ const NewTopics: React.FC = () => {
                                     </div>
                                 ))
                             ) : (
-                                <p>記事が取得できませんでした。</p>
+                                <p style={{color:"red"}}>error...</p>
                             )}
                         </div>
                     </div>

@@ -11,7 +11,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("Architect")
+@Table("architect")
 public class Architect {
     @Id
     private Integer id;

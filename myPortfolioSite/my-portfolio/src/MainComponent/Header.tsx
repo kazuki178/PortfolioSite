@@ -7,11 +7,15 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ onAboutMeClick }) => {
+
+    //コンポーネントがマウントされたときに実行
     useEffect(() => {
         const hamburgerMenu = document.querySelector('.hamburger-menu') as HTMLButtonElement;
         const headerSection = document.querySelector('.header-section') as HTMLElement;
         const menuItems = document.querySelectorAll('.header-section ul li a') as NodeListOf<HTMLAnchorElement>;
-
+        
+        // ハンバーガーメニューをクリックしたときの処理
+        //openを含むとき、つまり開いてる状態のときclosingを追加する(要素がcssでslideアップされる)
         const toggleMenu = () => {
             if (headerSection.classList.contains('open')) {
                 headerSection.classList.add('closing');
@@ -23,7 +27,6 @@ const Header: React.FC<HeaderProps> = ({ onAboutMeClick }) => {
                 headerSection.classList.add('open');
             }
         };
-
         const closeMenu = () => {
             if (headerSection.classList.contains('open')) {
                 headerSection.classList.add('closing');
@@ -33,14 +36,14 @@ const Header: React.FC<HeaderProps> = ({ onAboutMeClick }) => {
                 }, { once: true });
             }
         };
-
+        //ウィンドウリサイズのハンドリング
         const handleResize = () => {
             if (window.innerWidth > 515) {
                 headerSection.classList.remove('open');
                 headerSection.classList.remove('closing');
             }
         };
-
+        //ハンバーガーメニューのクリック時、メニューの開閉を切り替える
         if (hamburgerMenu && headerSection) {
             hamburgerMenu.addEventListener('click', toggleMenu);
             menuItems.forEach(item => {

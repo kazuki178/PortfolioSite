@@ -12,11 +12,11 @@ import com.kazyu.myapp.repository.ArchitectCrudRepository;
 @EnableJdbcRepositories(basePackages = "com.kazyu.myapp.repository")
 public class MyappApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MyappApplication.class, args);
-        //.getBean(MyappApplication.class).execute();
+        SpringApplication.run(MyappApplication.class, args).getBean(MyappApplication.class);
+        //.execute();
     }
 
-    // 実行確認済み
+    // // //実行確認済み
     // @Autowired
     // ArchitectCrudRepository articleCrudRepository;
 
