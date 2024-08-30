@@ -1,6 +1,6 @@
 import './MainStyleItem/App.css';
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from '../src/MainComponent/Header';
 import TopSection from '../src/MainComponent/TopSection';
 import ItemAndAboutMe from './MainComponent/ItemAndAboutMe';
