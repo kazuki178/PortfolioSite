@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../MainComponent/MainComponentsStyle/AboutMe.css';
 
-interface Architect {
-    id: number;
-    day: string;
-    title: string;
-
-}
 
 const AboutMe: React.FC = () => {
 
