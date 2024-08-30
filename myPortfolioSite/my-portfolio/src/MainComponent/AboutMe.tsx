@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import '../MainComponent/MainComponentsStyle/AboutMe.css';
 
 
