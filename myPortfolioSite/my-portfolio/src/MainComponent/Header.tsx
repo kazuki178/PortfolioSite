@@ -70,9 +70,8 @@ const Header: React.FC<HeaderProps> = ({ onAboutMeClick }) => {
                 <span></span>
             </button>
             <ul>
-                <li><Link to="/about" onClick={onAboutMeClick}>AboutMe</Link></li>
-                <li><Link to="/">Blog</Link></li>
-                <li><Link to="/">Tech</Link></li>
+                <li><Link to="/about">AboutMe</Link></li>
+                <li><Link to="/">Product</Link></li>
                 <li><Link to="/">Contact</Link></li>
             </ul>
         </div>

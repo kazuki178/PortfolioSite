@@ -1,10 +1,11 @@
 import ItemList from "./ItemList";
-import NewTopics from "./NewTopics";
+import AboutMe from "./AboutMe";
+
 const HomePage: React.FC = () => {
     return (
         <div>
             <ItemList />
-            <NewTopics />
+            <AboutMe />
         </div>
     );
 };

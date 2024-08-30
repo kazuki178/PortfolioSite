@@ -3,21 +3,14 @@ import React, { useEffect } from 'react';
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from '../src/MainComponent/Header';
 import TopSection from '../src/MainComponent/TopSection';
-import ItemAndTopics from '../src/MainComponent/ItemAndTopics';
-import AboutMe from '../src/HeaderItemComponent/AboutMe';
+import ItemAndAboutMe from './MainComponent/ItemAndAboutMe';
 
 const AppContent: React.FC = () => {
   // react routerのlocation(現在のurl情報)を取得
-  const location = useLocation();
-
   return (
     <>
-    {/* pathが/ or /aboutのみTopSectionのコンポーネントを表示 */}
-      {(location.pathname === '/' || location.pathname === '/about') && <TopSection />}
       <Routes>
-        {/* backend作成の旨をItemlistと共に返したい 他のコンポーネントを作成して、そこからitemlistとnewsコンポーネント(例)を返す */}
-        <Route path="/" element={<ItemAndTopics />} />
-        <Route path="/about" element={<AboutMe />} />
+        <Route path="/" element={<><TopSection /><ItemAndAboutMe /></>} />
       </Routes>
     </>
   );
