@@ -2,11 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../MainComponent/MainComponentsStyle/Header.css';
 
-interface HeaderProps {
-    onAboutMeClick: () => void;
-}
 
-const Header: React.FC<HeaderProps> = ({ onAboutMeClick }) => {
+const Header: React.FC = () => {
 
     //コンポーネントがマウントされたときに実行
     useEffect(() => {
@@ -70,8 +67,8 @@ const Header: React.FC<HeaderProps> = ({ onAboutMeClick }) => {
                 <span></span>
             </button>
             <ul>
-                <li><Link to="/about">AboutMe</Link></li>
-                <li><Link to="/">Product</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="product">Product</Link></li>
                 <li><Link to="/">Contact</Link></li>
             </ul>
         </div>

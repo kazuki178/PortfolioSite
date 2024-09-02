@@ -4,13 +4,14 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from '../src/MainComponent/Header';
 import TopSection from '../src/MainComponent/TopSection';
 import ItemAndAboutMe from './MainComponent/ItemAndAboutMe';
+import Product from '../src/HeaderComponent/Product/Product';
 
 const AppContent: React.FC = () => {
-  // react routerのlocation(現在のurl情報)を取得
   return (
     <>
       <Routes>
         <Route path="/" element={<><TopSection /><ItemAndAboutMe /></>} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </>
   );
@@ -41,7 +42,7 @@ export const App: React.FC = () => {
 
   return (
     <Router>
-      <Header onAboutMeClick={handleAboutMeClick} />
+      <Header />
       <AppContent />
     </Router>
   );
