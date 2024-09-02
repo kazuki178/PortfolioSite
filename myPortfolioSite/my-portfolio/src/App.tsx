@@ -27,10 +27,7 @@ const handleScroll = (): void => {
 };
 
 export const App: React.FC = () => {
-  const handleAboutMeClick = () => {
-    // About Meボタンがクリックされたときの処理
-    console.log('About Me clicked');
-  };
+
 
   // スクロールを検知してヘッダーの色を変える
   useEffect(() => {
