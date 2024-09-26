@@ -6,7 +6,7 @@ const TopSection = () => {
 
                 <div className="top-section">
                     <div className="top-section-img">
-                        <img src="../images/top-section-img/me.jpg" alt="プロフィール画像" className='top-section-img' />
+                        <img src="../images/top-section-img/catMe.jpg" alt="プロフィール画像" className='top-section-img' />
                     </div>
 
                     <div className="user-info">
